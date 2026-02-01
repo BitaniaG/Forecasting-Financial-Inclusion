@@ -3,6 +3,12 @@ This repository contains an end-to-end data science project focused on forecasti
 
 ## 📊 Task 1: Data Understanding and Enrichment
 
+- Loaded and explored unified financial inclusion datasets
+- Validated schema structure and record types
+- Added enriched observations, events, and impact links
+- Documented all enrichments in `docs/data_enrichment_log.md`
+
+
 ### Objective
 The objective of Task 1 is to understand, validate, and enhance Ethiopia’s
 financial inclusion dataset in preparation for analytical modeling.
