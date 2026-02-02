@@ -76,3 +76,33 @@ data/
  └── enriched/
 docs/
  └── task_2_readme.md
+
+ ## 📊 Task 3: Event Impact Modeling
+
+### Objective
+Assess how major policy, market, and infrastructure events relate
+to changes in financial inclusion indicators in Ethiopia.
+
+### Methodology
+- Defined ±12 month pre/post event windows
+- Computed mean indicator changes following events
+- Constructed an event–indicator association matrix
+- Visualized impacts using heatmaps and bar charts
+
+### Validation
+Directional consistency between post-event changes and known
+historical trends was assessed, supporting plausibility of associations.
+
+### Key Assumptions
+- Event impacts are linear and short- to medium-term
+- Effects are associative, not causal
+- External confounders are not fully controlled
+
+### Outputs
+- `data/outputs/event_indicator_matrix.csv`
+- Event–indicator heatmap
+- Pre/post impact visualizations
+
+### Next Step
+Results inform event-weighted, scenario-based forecasting in Task 4.
+
