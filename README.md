@@ -106,3 +106,88 @@ historical trends was assessed, supporting plausibility of associations.
 ### Next Step
 Results inform event-weighted, scenario-based forecasting in Task 4.
 
+
+## 📊 Task 4: Forecasting Financial Inclusion Indicators (2025–2027)
+
+### Objective
+
+The objective of Task 4 is to forecast Ethiopia’s financial inclusion trajectory for 2025–2027, focusing on the two core Global Findex dimensions:
+
+- Access: Account Ownership Rate
+
+- Usage: Active Mobile Money / Digital Payment Adoption
+
+These forecasts support forward-looking policy planning and investment decisions for stakeholders including development finance institutions, mobile money operators, and the National Bank of Ethiopia.
+
+### Data Inputs
+
+- Enriched unified dataset:
+data/processed/ethiopia_fi_unified_enriched.csv
+
+- Indicators selected based on availability, relevance, and alignment with Global Findex standards.
+
+### Methodology
+
+#### Time Series Preparation
+
+- Annual aggregation of indicator values.
+
+- Validation to ensure sufficient historical coverage.
+
+#### Baseline Forecasting
+
+- Linear trend extrapolation using historical data.
+
+- Chosen due to limited sample size and need for interpretability.
+
+#### Uncertainty Quantification
+
+- Confidence intervals constructed using residual standard error.
+
+- Reflects uncertainty from data sparsity and structural changes.
+
+#### Scenario Analysis
+
+- Baseline: continuation of observed trends.
+
+- Optimistic: accelerated reform and infrastructure expansion.
+
+- Pessimistic: policy delays or slower ecosystem growth.
+
+### Outputs
+
+#### Forecasting notebook:
+notebooks/task_4_forecasting.ipynb
+
+#### Forecast table with confidence intervals:
+data/forecasts/access_usage_forecasts.csv
+
+#### Visualizations:
+
+Indicator forecasts with confidence bands
+
+Scenario comparison plots
+
+### Key Findings
+
+- Both Access and Usage indicators show continued growth through 2027.
+
+- Usage growth is more sensitive to ecosystem and policy changes than Access.
+
+- Scenario analysis highlights the importance of regulatory timing and infrastructure investments.
+
+### Limitations
+
+- Short historical time series limits model complexity.
+
+- Linear trends may not fully capture nonlinear adoption dynamics.
+
+- Event impacts are incorporated qualitatively rather than through causal estimation.
+
+### Next Steps
+
+- Integrate event-impact coefficients into forecasts (Task 3 → Task 4 refinement).
+
+- Extend uncertainty modeling using probabilistic or Bayesian methods.
+
+- Develop an interactive dashboard to communicate results to stakeholders (Task 5).
