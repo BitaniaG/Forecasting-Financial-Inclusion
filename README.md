@@ -191,3 +191,99 @@ Scenario comparison plots
 - Extend uncertainty modeling using probabilistic or Bayesian methods.
 
 - Develop an interactive dashboard to communicate results to stakeholders (Task 5).
+
+## 📊 Task 5: Interactive Dashboard for Financial Inclusion Forecasting
+
+### Overview
+
+Task 5 focuses on developing an interactive dashboard to communicate historical trends, key events, and forecasted trajectories of financial inclusion indicators in Ethiopia. The dashboard serves as the final decision-support layer of the project, translating analytical outputs into an accessible interface for policymakers, regulators, mobile money operators, and development partners.
+
+The dashboard integrates historical data, enriched event information, and model-based forecasts developed in earlier tasks.
+
+### Objectives
+
+The dashboard is designed to:
+
+Visualize historical Access and Usage indicators
+
+Overlay key ecosystem events (e.g., Telebirr launch, M-Pesa entry)
+
+Present forecasts for 2025–2027 with uncertainty intervals
+
+Allow users to explore alternative growth scenarios
+
+Communicate key insights and limitations clearly
+
+### Folder Structure
+dashboard/
+├── app.py          # Streamlit application (UI + visualizations)
+├── utils.py        # Reusable data loading and validation functions
+
+### Data Sources
+
+The dashboard uses:
+
+data/processed/ethiopia_fi_unified_enriched.csv
+
+data/forecasts/access_usage_forecasts.csv
+
+These datasets are outputs from Tasks 1–4 and follow the unified schema defined earlier in the project.
+
+### Key Dashboard Components
+1. Historical Trends
+
+Interactive time-series visualizations of financial inclusion indicators
+
+Enables inspection of long-term trajectories and short-term changes
+
+2. Event Timeline
+
+Timeline visualization of major digital finance events
+
+Supports contextual interpretation of structural shifts in indicators
+
+3. Forecasts with Uncertainty
+
+Forecasts for 2025–2027
+
+Confidence intervals displayed to reflect model uncertainty
+
+4. Scenario Analysis
+
+User-controlled growth adjustment slider
+
+Allows exploration of optimistic and pessimistic scenarios
+
+5. Insights & Limitations
+
+Summary of key takeaways
+
+Explicit documentation of assumptions and data limitations
+
+### How to Run the Dashboard
+
+#### Install dependencies:
+
+pip install -r requirements.txt
+
+
+#### Launch the dashboard:
+
+streamlit run dashboard/app.py
+
+
+Open the provided local URL in your browser.
+
+### Key Assumptions & Limitations
+
+Forecasts assume structural continuity of recent trends
+
+Event impacts are associative, not causal
+
+Short time series limits complex model selection
+
+Scenario analysis is illustrative, not predictive
+
+### Outcome
+
+The dashboard provides a clear, interactive interface for exploring Ethiopia’s financial inclusion trajectory, supporting evidence-based policy discussion and strategic planning.
